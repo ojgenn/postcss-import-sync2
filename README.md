@@ -39,7 +39,7 @@ please look at
 ## Installation
 
 ```console
-$ npm install postcss-import
+$ npm install postcss-import-sync2
 ```
 
 ## Usage
@@ -52,7 +52,7 @@ work.
 // dependencies
 var fs = require("fs")
 var postcss = require("postcss")
-var atImport = require("postcss-import")
+var atImport = require("postcss-import-sync2")
 
 // css to be processed
 var css = fs.readFileSync("css/input.css", "utf8")
@@ -188,7 +188,7 @@ this value will be ignored.
 
 ```js
 var postcss = require("postcss")
-var atImport = require("postcss-import")
+var atImport = require("postcss-import-sync2")
 
 postcss()
   .use(atImport({
@@ -202,7 +202,7 @@ postcss()
 
 ## `dependency` Message Support
 
-`postcss-import` adds a message to `result.messages` for each `@import`. Messages are in the following format:
+`postcss-import-sync2` adds a message to `result.messages` for each `@import`. Messages are in the following format:
 
 ```
 {
