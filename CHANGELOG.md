@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.2.0 (2021-11-10)
+
+
+### Features
+
+* update to PostCSS 8 ([f86ab4a](https://github.com/longlho/postcss-import-sync/commit/f86ab4ac68165c4832e6952876713aa04764be37))
+
 # 10.0.0 - 2017-05-12
 
 - Removed: Support for Node.js versions less than 4.5.x ([#283](https://github.com/postcss/postcss-import/pull/283))
