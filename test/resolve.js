@@ -45,7 +45,7 @@ test('should resolve local modules', checkFixture, 'resolve-local-modules', {
     path: null,
 })
 
-test('should resolve local modules', checkFixture, 'resolve-path-modules', {
+test('should resolve local modules with path', checkFixture, 'resolve-path-modules', {
     path: 'test/fixtures/imports/modules',
 })
 

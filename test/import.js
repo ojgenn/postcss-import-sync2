@@ -26,7 +26,7 @@ test('should ignore & adjust external import', checkFixture, 'ignore')
 
 test('should not fail with only one absolute import', t => {
     const base = '@import url(http://)'
-    return postcss().use(atImport()).process(base).then(result => {
+    return postcss().use(atImport()).process(base, { from: undefined }).then(result => {
         t.is(result.warnings().length, 0)
         t.is(result.css, base)
     })
@@ -35,7 +35,7 @@ test('should not fail with only one absolute import', t => {
 test('should not fail with absolute and local import', t => {
     return postcss()
         .use(atImport())
-        .process("@import url('http://');\n@import 'test/fixtures/imports/foo.css';")
+        .process("@import url('http://');\n@import 'test/fixtures/imports/foo.css';", { from: undefined })
         .then(result => t.is(result.css, "@import url('http://');\nfoo{}"))
 })
 
@@ -59,7 +59,7 @@ test('should contain a correct sourcemap', t => {
 })
 
 test('inlined @import should keep PostCSS AST references clean', t => {
-    return postcss().use(atImport()).process("@import 'test/fixtures/imports/foo.css';\nbar{}").then(result => {
+    return postcss().use(atImport()).process("@import 'test/fixtures/imports/foo.css';\nbar{}", { from: undefined }).then(result => {
         result.root.nodes.forEach(node => t.is(result.root, node.parent))
     })
 })
@@ -69,7 +69,7 @@ test('should work with empty files', checkFixture, 'empty-and-useless', { path: 
 ])
 
 test('should work with no styles without throwing an error', t => {
-    return postcss().use(atImport()).process('').then(result => {
+    return postcss().use(atImport()).process('', { from: undefined }).then(result => {
         t.is(result.warnings().length, 0)
     })
 })

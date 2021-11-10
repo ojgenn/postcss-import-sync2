@@ -39,7 +39,7 @@ please look at
 ## Installation
 
 ```console
-$ npm install postcss-import-sync2
+$ npm install postcss postcss-import-sync2
 ```
 
 ## Usage
