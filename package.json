@@ -12,7 +12,7 @@
   ],
   "author": "Long Ho",
   "license": "MIT",
-  "repository": "https://github.com/longlho/postcss-import-sync",
+  "repository": "https://github.com/longlho/postcss-import-sync2",
   "files": [
     "index.js",
     "lib"

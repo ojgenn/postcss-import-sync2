@@ -1,8 +1,7 @@
-# postcss-import
+# postcss-import-sync2
 
-[![Unix Build status](https://img.shields.io/travis/postcss/postcss-import/master.svg?branch=master&label=unix%20build)](https://travis-ci.org/postcss/postcss-import)
-[![Windows Build status](https://img.shields.io/appveyor/ci/MoOx/postcss-import/master.svg?label=window%20build)](https://ci.appveyor.com/project/MoOx/postcss-import/branch/master)
-[![Version](https://img.shields.io/npm/v/postcss-import.svg)](https://github.com/postcss/postcss-import/blob/master/CHANGELOG.md)
+[![Build status](https://github.com/longlho/postcss-import-sync2/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/longlho/postcss-import-sync2/actions?query=workflow%3ANode.js%20CI)
+[![Version](https://img.shields.io/npm/v/postcss-import-sync2.svg)](https://github.com/longlho/postcss-import-sync2/blob/master/CHANGELOG.md)
 
 > [PostCSS](https://github.com/postcss/postcss) plugin to transform `@import`
 rules by inlining content.
